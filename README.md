@@ -1,26 +1,34 @@
 # Machine Learning Practical Experiments
 
-This repository contains practical implementations of **Machine Learning and Data Science concepts using Python**.
+This repository contains practical implementations of Machine Learning and Data Science concepts using Python. The experiments cover data preprocessing, exploratory data analysis, regression, dimensionality reduction, classification, clustering, and a basic artificial neural network.
 
-The experiments cover data preprocessing, exploratory data analysis, regression, dimensionality reduction, classification, and clustering algorithms using Python and Scikit-learn.
+## Table of Contents
 
-## 📚 Experiments Included
+- [About the Repository](#about-the-repository)
+- [Technologies Used](#technologies-used)
+- [Repository Structure](#repository-structure)
+- [Experiments](#experiments)
+  - [Experiment 1: Data Preprocessing](#experiment-1--data-preprocessing)
+  - [Experiment 2: Exploratory Data Analysis (EDA)](#experiment-2--exploratory-data-analysis-eda)
+  - [Experiment 3: Linear and Logistic Regression](#experiment-3--linear-and-logistic-regression)
+  - [Experiment 4: Principal Component Analysis (PCA)](#experiment-4--principal-component-analysis-pca)
+  - [Experiment 5: Support Vector Machine (SVM)](#experiment-5--support-vector-machine-svm-for-classification)
+  - [Experiment 6: Decision Tree and KNN](#experiment-6--decision-tree-and-k-nearest-neighbour-knn)
+  - [Experiment 7: Regression Algorithm Comparison](#experiment-7--comparison-of-different-regression-algorithms)
+  - [Experiment 8: Classification Algorithm Comparison](#experiment-8--comparison-of-different-classification-algorithms)
+  - [Experiment 9: K-Means Clustering](#experiment-9--k-means-clustering)
+  - [Experiment 10: Single-Layer ANN](#experiment-10--iris-flower-classification-using-a-single-layer-artificial-neural-network-ann)
+- [Installation and Execution](#installation-and-execution)
+- [Learning Outcomes](#learning-outcomes)
+- [Author](#author)
 
-| No. | Experiment | Dataset |
-| --- | --- | --- |
-| 1 | Data Preprocessing | Employee Dataset |
-| 2 | Exploratory Data Analysis (EDA) | Titanic Dataset |
-| 3 | Linear & Logistic Regression | USA Housing & Diabetes Datasets |
-| 4 | Principal Component Analysis (PCA) | Iris Dataset |
-| 5 | Support Vector Machine (SVM) for Classification | Iris Dataset |
-| 6 | Decision Tree & K-Nearest Neighbour (KNN) | Iris Dataset |
-| 7 | Comparison of Different Regression Algorithms | California Housing Dataset |
-| 8 | Comparison of Different Classification Algorithms | Iris Dataset |
-| 9 | K-Means Clustering | Mall Customers Dataset |
+## About the Repository
 
-## 🛠️ Technologies Used
+The purpose of these practicals is to understand and implement fundamental Machine Learning techniques using Python and common data science libraries. Each experiment uses a dataset, applies an algorithm or analysis technique, and evaluates or visualizes the result where appropriate.
 
-- Python
+## Technologies Used
+
+- Python 3
 - NumPy
 - Pandas
 - Matplotlib
@@ -28,236 +36,202 @@ The experiments cover data preprocessing, exploratory data analysis, regression,
 - Scikit-learn
 - Jupyter Notebook
 
-## 📂 Repository Structure
+## Repository Structure
+
+The folder and file names below describe the intended organization. Keep the actual names in your local repository consistent with your files.
 
 ```text
-MI LAB/
-│
+ML_Practicals/
 ├── README.md
-│
 ├── Exp1_Data_Pre-processing/
 │   ├── Employee.csv
 │   └── Data pre-processing.ipynb
-│
 ├── Exp2_EDA/
 │   ├── train.csv
 │   └── EDA.ipynb
-│
 ├── Exp3_Linear&Logistic_Regression/
 │   ├── USA Housing.csv
 │   ├── Diabetes.csv
 │   └── Linear&Logistic_Regression.ipynb
-│
 ├── Exp4_PCA/
 │   ├── Iris.csv
 │   └── PCA.ipynb
-│
 ├── Exp5_SVMForClassification/
 │   ├── iris.csv
 │   └── SVM_Classification.ipynb
-│
 ├── Exp6_Decision_Tree&KNN/
 │   ├── iris.csv
 │   └── Decision_Tree_KNN.ipynb
-│
 ├── Exp7_Comparison of Different Regression Algorithms for Predictive Modeling/
 │   └── Comparison_of_Different_Regression_Algorithms_for_Predictive_Modeling.ipynb
-│
 ├── Exp8_Compare different classification algorithms/
 │   ├── iris.csv
 │   └── Compare_different_classification_algorithms_using_Precision_Recall,_Accuracy.ipynb
-│
-└── Exp9_K-Means Clustering/
-    ├── Mall Customers.csv
-    ├── K-Means_Clustering.ipynb
-    └── Mall_Customers_with_Clusters.csv
+├── Exp9_K-Means Clustering/
+│   ├── Mall Customers.csv
+│   ├── K-Means_Clustering.ipynb
+│   └── Mall_Customers_with_Clusters.csv
+└── Exp10_Single_Layer_ANN/
+    ├── iris.csv
+    └── single_layer_ann_iris.py
 ```
 
-## 🧪 Experiments
+## Experiments
 
 ### Experiment 1 – Data Preprocessing
 
-Performed data preprocessing on the **Employee Dataset** to improve data quality and prepare the dataset for machine learning.
+**Dataset:** Employee Dataset
 
-The experiment includes:
+**Objective:** Clean and transform the Employee Dataset so that it is suitable for further analysis and Machine Learning.
 
-- Handling missing values
-- Removing duplicate records
-- Detecting outliers using the IQR method
-- Encoding categorical data
-- Applying normalization
-- Applying standardization
+**Tasks performed:**
+- Inspect the dataset structure and data types.
+- Identify and handle missing values.
+- Detect and remove duplicate records.
+- Detect potential outliers using the Interquartile Range (IQR) method.
+- Encode categorical columns into numerical values.
+- Apply normalization to scale values to a selected range.
+- Apply standardization to transform features using their mean and standard deviation.
+
+**Concepts:** Data cleaning, missing-value handling, duplicate removal, outlier detection, categorical encoding, normalization, and standardization.
+
+**Outcome:** The experiment demonstrates how preprocessing improves data quality and prepares raw data for Machine Learning.
 
 ### Experiment 2 – Exploratory Data Analysis (EDA)
 
-Performed Exploratory Data Analysis on the **Titanic Dataset** to understand the dataset, identify patterns, and analyze relationships between variables.
+**Dataset:** Titanic Dataset (`train.csv`)
 
-The experiment includes:
+**Objective:** Explore the Titanic dataset to understand its variables, distributions, missing values, and relationships.
 
-- Statistical analysis
-- Data visualization
-- Missing value analysis
-- Distribution analysis
-- Correlation analysis
+**Tasks performed:**
+- Load and inspect the dataset.
+- Calculate descriptive statistics.
+- Check data types and missing values.
+- Examine distributions of numerical and categorical variables.
+- Visualize data using plots such as histograms, count plots, and box plots.
+- Analyze relationships between variables using correlation analysis and visualizations.
+- Explore patterns related to passenger survival.
 
-### Experiment 3 – Linear & Logistic Regression
+**Concepts:** Descriptive statistics, data visualization, distributions, missing-value analysis, and correlation.
 
-Implemented Linear Regression and Logistic Regression using two different datasets.
+**Outcome:** EDA helps identify patterns, data-quality issues, and relationships that may be useful for subsequent analysis or modeling.
 
-**Part A – Linear Regression**
+### Experiment 3 – Linear and Logistic Regression
 
-**Dataset:** USA Housing Dataset
+This experiment applies two supervised learning algorithms to two different datasets.
 
-Linear Regression was implemented to predict house prices based on housing features.
+#### Part A – Linear Regression
 
-The experiment includes:
+**Dataset:** USA Housing Dataset (`USA Housing.csv`)
 
-- Loading and preparing the dataset
-- Checking missing values and duplicate records
-- Exploratory Data Analysis
-- Defining features and target variables
-- Splitting the dataset into training and testing sets
-- Training the Linear Regression model
-- Calculating model coefficients and intercept
-- Predicting house prices
-- Evaluating model performance
-- Visualizing actual versus predicted prices
+**Objective:** Predict house prices using housing-related features.
 
-**Evaluation Metrics:**
+**Tasks performed:**
+- Load and inspect the dataset.
+- Check missing values and duplicate records.
+- Perform exploratory data analysis.
+- Select input features and the target house-price column.
+- Split the data into training and testing sets.
+- Train a Linear Regression model.
+- Examine model coefficients and intercept.
+- Predict house prices for the test set.
+- Compare actual and predicted values.
 
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
-- Mean Absolute Error (MAE)
-- R² Score
+**Evaluation metrics:** Mean Squared Error (MSE), Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), and R² score.
 
-**Output:**
+**Recorded output:**
 
-```text
-Linear Regression Evaluation
-----------------------------
-MSE       : 10089009300.89
-RMSE      : 100444.06
-MAE       : 80879.10
-R2 Score  : 0.9180
-```
+| Metric | Value |
+|---|---:|
+| MSE | 10,089,009,300.89 |
+| RMSE | 100,444.06 |
+| MAE | 80,879.10 |
+| R² score | 0.9180 |
 
-**Observation:**
+**Observation:** The recorded R² score is approximately 0.918, meaning the model explains about 91.8% of the variation in the test-set house prices for that run.
 
-The Linear Regression model achieved an R² score of approximately 91.80%, indicating that it explained a large proportion of the variation in house prices on the test dataset.
+#### Part B – Logistic Regression
 
-**Part B – Logistic Regression**
+**Dataset:** Diabetes Dataset (`Diabetes.csv`)
 
-**Dataset:** Diabetes Dataset
+**Objective:** Predict the diabetes outcome from the available medical and demographic features.
 
-Logistic Regression was implemented to predict whether a person has diabetes based on medical and demographic features.
+**Tasks performed:**
+- Load and inspect the dataset.
+- Check missing values and duplicates.
+- Explore the target-class distribution.
+- Separate features and target labels.
+- Split the data using stratified sampling.
+- Standardize the input features.
+- Train a Logistic Regression classifier.
+- Predict class labels and probabilities.
+- Evaluate the classifier and visualize the confusion matrix.
 
-The experiment includes:
+**Evaluation metrics:** Accuracy, precision, recall, F1 score, ROC-AUC, and confusion matrix.
 
-- Loading and preparing the dataset
-- Checking missing values and duplicate records
-- Exploratory Data Analysis
-- Analyzing diabetes outcome distribution
-- Defining input features and target variable
-- Splitting the dataset using stratified sampling
-- Applying StandardScaler for feature scaling
-- Training the Logistic Regression model
-- Predicting diabetes outcomes
-- Calculating prediction probabilities
-- Evaluating classification performance
-- Visualizing the confusion matrix
+**Recorded output:**
 
-**Evaluation Metrics:**
+| Metric | Value |
+|---|---:|
+| Accuracy | 0.7143 |
+| Precision | 0.6087 |
+| Recall | 0.5185 |
+| F1 score | 0.5600 |
+| ROC-AUC | 0.8230 |
 
-- Accuracy
-- Precision
-- Recall
-- F1 Score
-- ROC-AUC Score
-- Confusion Matrix
-
-**Output:**
-
-```text
-Logistic Regression Evaluation
-------------------------------
-Accuracy  : 0.7143
-Precision : 0.6087
-Recall    : 0.5185
-F1 Score  : 0.5600
-ROC-AUC   : 0.8230
-```
-
-**Confusion Matrix:**
+**Confusion matrix:**
 
 ```text
 [[82 18]
  [26 28]]
 ```
 
-**Observation:**
-
-The Logistic Regression model achieved approximately 71.43% accuracy and an ROC-AUC score of 0.8230 on the test dataset.
+**Observation:** In the recorded run, Logistic Regression achieved approximately 71.43% accuracy and a ROC-AUC score of 0.8230.
 
 ### Experiment 4 – Principal Component Analysis (PCA)
 
-**Dataset:** Iris Dataset
+**Dataset:** Iris Dataset (`Iris.csv`)
 
-Applied Principal Component Analysis to reduce the dimensionality of the Iris Dataset while preserving important information.
+**Objective:** Reduce the number of input features while retaining as much information from the original dataset as possible.
 
-The original dataset contains four numerical features:
+The Iris dataset has four numerical features:
+- Sepal length
+- Sepal width
+- Petal length
+- Petal width
 
-- Sepal Length
-- Sepal Width
-- Petal Length
-- Petal Width
+**Tasks performed:**
+- Load and inspect the dataset.
+- Check missing values and duplicates.
+- Separate features and target labels.
+- Standardize the input features.
+- Apply PCA to reduce the four features to two principal components.
+- Calculate explained and cumulative explained variance.
+- Visualize the variance retained by the components.
+- Train Logistic Regression using the reduced features.
+- Evaluate the model and visualize the confusion matrix.
 
-The experiment includes:
+**Recorded explained variance:**
 
-- Loading and examining the dataset
-- Checking missing values and duplicate records
-- Separating features and target labels
-- Standardizing the input features
-- Applying PCA to reduce four dimensions to two
-- Calculating explained variance
-- Calculating cumulative explained variance
-- Visualizing cumulative variance
-- Comparing feature visualization before and after PCA
-- Training Logistic Regression on PCA-transformed data
-- Evaluating classification accuracy
-- Visualizing the confusion matrix
+| Component | Explained variance |
+|---|---:|
+| PC1 | 72.77% |
+| PC2 | 23.03% |
+| PC3 | 3.68% |
+| PC4 | 0.52% |
 
-**Explained Variance:**
+The first two components retain approximately **95.80%** of the total variance.
 
-```text
-PC1 : 72.77%
-PC2 : 23.03%
-PC3 : 3.68%
-PC4 : 0.52%
-```
+**Recorded output:**
 
-**Cumulative Explained Variance:**
+| Item | Result |
+|---|---|
+| Original dimensions | 4 |
+| Reduced dimensions | 2 |
+| Variance retained | 95.80% |
+| Classification accuracy | 88.89% |
 
-```text
-PC1       : 72.77%
-PC1 + PC2 : 95.80%
-PC1-PC3   : 99.48%
-All PCs   : 100.00%
-```
-
-**Output:**
-
-```text
-PCA RESULT
-------------------------------------------
-Original dimensions       : 4
-Reduced dimensions        : 2
-PC1 variance              : 72.77%
-PC2 variance              : 23.03%
-Variance retained         : 95.80%
-Classification accuracy  : 88.89%
-```
-
-**Confusion Matrix:**
+**Confusion matrix:**
 
 ```text
 [[15  0  0]
@@ -265,65 +239,36 @@ Classification accuracy  : 88.89%
  [ 0  4 11]]
 ```
 
-**Observation:**
-
-PCA reduced the number of features from four to two while retaining 95.80% of the total variance. Logistic Regression achieved 88.89% classification accuracy using the reduced features.
+**Observation:** PCA reduces the feature space from four dimensions to two while retaining most of the dataset's variance. Classification accuracy depends on the split and model settings used.
 
 ### Experiment 5 – Support Vector Machine (SVM) for Classification
 
-**Dataset:** Iris Dataset
+**Dataset:** Iris Dataset (`iris.csv`)
 
-Implemented Support Vector Machine to classify Iris flowers into three species: Setosa, Versicolor, and Virginica.
+**Objective:** Classify Iris flowers into Setosa, Versicolor, and Virginica using a Support Vector Machine.
 
-The experiment includes:
+**Tasks performed:**
+- Load and inspect the Iris dataset.
+- Separate the four flower measurements from the species label.
+- Split the dataset into training and testing sets.
+- Standardize the features.
+- Train an SVM classifier using the Radial Basis Function (RBF) kernel.
+- Predict species for test samples.
+- Calculate accuracy and generate a confusion matrix and classification report.
+- Predict the species of a new flower sample.
 
-- Loading and examining the dataset
-- Checking missing values
-- Separating features and target labels
-- Splitting the dataset into training and testing sets
-- Applying StandardScaler for feature scaling
-- Creating an SVM classifier using the RBF kernel
-- Training the SVM model
-- Predicting flower species
-- Evaluating classification accuracy
-- Generating a confusion matrix
-- Generating a classification report
-- Predicting the species of a new flower sample
+**Model configuration:**
+- Algorithm: Support Vector Machine
+- Kernel: RBF
+- `C`: 1.0
+- `gamma`: `scale`
 
-**Important Concepts:**
+**Recorded output:**
+- Training samples: 120
+- Testing samples: 30
+- Accuracy: 100%
 
-- Hyperplane
-- Support vectors
-- Maximum margin
-- Linear and non-linear classification
-- Kernel functions
-- RBF kernel
-- Feature scaling
-- Classification accuracy
-- Precision
-- Recall
-- F1 Score
-- Confusion Matrix
-
-**Model Configuration:**
-
-```text
-Algorithm : Support Vector Machine
-Kernel    : RBF
-C         : 1.0
-Gamma     : scale
-```
-
-**Output:**
-
-```text
-Training Samples: 120
-Testing Samples : 30
-
-Accuracy: 100.0%
-```
-
-**Confusion Matrix:**
+**Confusion matrix:**
 
 ```text
 [[10  0  0]
@@ -331,243 +276,322 @@ Accuracy: 100.0%
  [ 0  0 11]]
 ```
 
-**Classification Report:**
+**New sample prediction:**
 
 ```text
-              precision  recall  f1-score  support
-
-setosa             1.00    1.00      1.00       10
-versicolor         1.00    1.00      1.00        9
-virginica          1.00    1.00      1.00       11
-
-accuracy                              1.00       30
+Input features: [5.1, 3.5, 1.4, 0.2]
+Predicted species: setosa
 ```
 
-**New Sample Prediction:**
+**Concepts:** Hyperplane, support vectors, maximum margin, kernels, RBF kernel, feature scaling, precision, recall, F1 score, and confusion matrix.
 
-```text
-Input Features: [5.1, 3.5, 1.4, 0.2]
-Predicted Species: setosa
-```
+**Observation:** The recorded SVM run correctly classified all 30 test samples. Results may vary if the data split or model settings change.
 
-**Observation:**
+### Experiment 6 – Decision Tree and K-Nearest Neighbour (KNN)
 
-The SVM classifier achieved 100% accuracy on the test dataset and correctly classified all 30 test samples.
+**Dataset:** Iris Dataset (`iris.csv`)
 
-### Experiment 6 – Decision Tree & K-Nearest Neighbour (KNN)
+**Objective:** Implement and compare Decision Tree and KNN classifiers for Iris flower classification.
 
-**Dataset:** Iris Dataset
+**Algorithms:**
+1. Decision Tree Classifier
+2. K-Nearest Neighbour Classifier
 
-Implemented and compared Decision Tree and K-Nearest Neighbour classification algorithms.
+**Tasks performed:**
+- Load the Iris dataset and select features and target labels.
+- Split the data into training and testing sets.
+- Apply feature scaling where required, particularly for KNN.
+- Train a Decision Tree classifier.
+- Train a KNN classifier.
+- Predict species for test samples.
+- Compare accuracy.
+- Generate confusion matrices and classification reports.
 
-Algorithms implemented:
-
-- Decision Tree Classifier
-- K-Nearest Neighbour (KNN)
-
-The experiment covers:
-
-- Decision tree splitting
+**Concepts:**
+- Decision-tree splitting
 - Entropy
-- Information Gain
-- Gini Index
-- K-Nearest Neighbour algorithm
-- Euclidean distance
-- Manhattan distance
+- Information gain
+- Gini index
+- K-nearest neighbours
+- Euclidean and Manhattan distance
 - Feature scaling
-- Classification accuracy
-- Confusion Matrix
-- Classification Report
+- Classification metrics
 
-**Output:**
+**Recorded output:**
 
-```text
-Model Comparison
--------------------------
-Decision Tree Accuracy: 100.0 %
-KNN Accuracy: 100.0 %
-```
+| Algorithm | Accuracy |
+|---|---:|
+| Decision Tree | 100% |
+| KNN | 100% |
 
-**Observation:**
-
-Both algorithms achieved 100% accuracy in the recorded output.
+**Observation:** Both models achieved 100% accuracy in the recorded run. Performance can vary with the train-test split and hyperparameters.
 
 ### Experiment 7 – Comparison of Different Regression Algorithms
 
 **Dataset:** California Housing Dataset
 
-Compared multiple regression algorithms for predictive modeling using the California Housing Dataset.
+**Objective:** Compare different regression algorithms for predicting housing values.
 
-Algorithms implemented:
+**Algorithms implemented:**
+1. Linear Regression
+2. Polynomial Regression
+3. Decision Tree Regression
+4. Random Forest Regression
+5. Support Vector Regression (SVR)
 
-- Linear Regression
-- Polynomial Regression
-- Decision Tree Regression
-- Random Forest Regression
-- Support Vector Regression (SVR)
+**Tasks performed:**
+- Load and inspect the California Housing dataset.
+- Select input features and the target variable.
+- Split the dataset into training and testing sets.
+- Train each regression model.
+- Generate predictions for the test data.
+- Compare models using MAE, MSE, and R² score.
 
-The models were evaluated using:
+**Evaluation metrics:**
+- **MAE:** Average absolute difference between actual and predicted values.
+- **MSE:** Average squared difference between actual and predicted values.
+- **R² score:** Indicates how well the model explains the variation in the target variable.
 
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- R² Score
+**Recorded model comparison:**
 
-**Output:**
+| Model | MAE | MSE | R² score |
+|---|---:|---:|---:|
+| Linear Regression | 0.5332 | 0.5559 | 0.5758 |
+| Polynomial Regression | 0.4670 | 0.4643 | 0.6457 |
+| Decision Tree Regression | 0.4547 | 0.4952 | 0.6221 |
+| Random Forest Regression | 0.3275 | 0.2554 | 0.8051 |
+| Support Vector Regression (SVR) | 0.3973 | 0.3542 | 0.7297 |
 
-```text
-Model Comparison
------------------------------
-Linear Regression -> MAE: 0.5332 | MSE: 0.5559 | R2: 0.5758
-Polynomial Regression -> MAE: 0.4670 | MSE: 0.4643 | R2: 0.6457
-Decision Tree -> MAE: 0.4547 | MSE: 0.4952 | R2: 0.6221
-Random Forest -> MAE: 0.3275 | MSE: 0.2554 | R2: 0.8051
-SVR -> MAE: 0.3973 | MSE: 0.3542 | R2: 0.7297
-```
-
-**Observation:**
-
-Based on the recorded results, Random Forest Regression achieved the lowest MAE and MSE and the highest R² score among the compared models.
+**Observation:** In the recorded comparison, Random Forest Regression achieved the lowest MAE and MSE and the highest R² score among the five models.
 
 ### Experiment 8 – Comparison of Different Classification Algorithms
 
-**Dataset:** Iris Dataset
+**Dataset:** Iris Dataset (`iris.csv`)
 
-Implemented and compared multiple classification algorithms using the Iris Dataset.
+**Objective:** Compare the performance of multiple classification algorithms on the Iris dataset.
 
-Algorithms implemented:
+**Algorithms implemented:**
+1. Logistic Regression
+2. Decision Tree
+3. Random Forest
+4. Support Vector Machine (SVM)
+5. K-Nearest Neighbour (KNN)
+6. Naive Bayes
 
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- Support Vector Machine (SVM)
-- K-Nearest Neighbour (KNN)
-- Naive Bayes
+**Tasks performed:**
+- Load and inspect the Iris dataset.
+- Separate features and target labels.
+- Split the dataset into training and testing sets.
+- Apply feature scaling where needed.
+- Train each classification model.
+- Predict the test labels.
+- Compare models using precision, recall, and accuracy.
 
-The models were evaluated using:
+**Evaluation metrics:**
+- **Precision:** Proportion of predicted positive cases that are correct.
+- **Recall:** Proportion of actual positive cases correctly identified.
+- **Accuracy:** Proportion of all predictions that are correct.
 
-- Precision
-- Recall
-- Accuracy
+**Recorded output:**
 
-**Output:**
+| Algorithm | Precision | Recall | Accuracy |
+|---|---:|---:|---:|
+| Logistic Regression | 1.00 | 1.00 | 1.00 |
+| Decision Tree | 1.00 | 1.00 | 1.00 |
+| Random Forest | 1.00 | 1.00 | 1.00 |
+| SVM | 1.00 | 1.00 | 1.00 |
+| KNN | 1.00 | 1.00 | 1.00 |
+| Naive Bayes | 1.00 | 1.00 | 1.00 |
 
-```text
-Comparison of Classification Algorithms:
-
-             Algorithm  Precision  Recall  Accuracy
-0  Logistic Regression        1.0     1.0       1.0
-1        Decision Tree        1.0     1.0       1.0
-2        Random Forest        1.0     1.0       1.0
-3                  SVM        1.0     1.0       1.0
-4                  KNN        1.0     1.0       1.0
-5          Naive Bayes        1.0     1.0       1.0
-```
-
-**Observation:**
-
-All six algorithms achieved 100% precision, recall, and accuracy in the recorded output.
+**Observation:** All six algorithms achieved 100% precision, recall, and accuracy in the recorded run. These results depend on the dataset split and model configuration.
 
 ### Experiment 9 – K-Means Clustering
 
-**Dataset:** Mall Customers Dataset
+**Dataset:** Mall Customers Dataset (`Mall Customers.csv`)
 
-**Output Dataset:** Mall_Customers_with_Clusters.csv
+**Output file:** `Mall_Customers_with_Clusters.csv`
 
-Implemented K-Means Clustering to group customers into clusters based on the similarity of their features.
+**Objective:** Group customers into clusters based on similarities in their characteristics and spending behaviour.
 
-**The experiment includes:**
+The dataset commonly includes:
+- Customer ID
+- Gender
+- Age
+- Annual Income (k$)
+- Spending Score (1–100)
 
-- Loading and examining the customer dataset
-- Selecting relevant features
-- Applying the K-Means Clustering algorithm
-- Determining the number of clusters
-- Assigning customers to clusters
-- Visualizing the resulting clusters
-- Saving the clustered dataset to a CSV file
+**Tasks performed:**
+- Load and inspect the customer dataset.
+- Select relevant numerical features for clustering.
+- Scale features when appropriate.
+- Use the Elbow Method to help choose the number of clusters.
+- Apply K-Means clustering.
+- Assign a cluster label to each customer.
+- Visualize the resulting clusters and their centroids.
+- Save the dataset with cluster assignments to a new CSV file.
 
-**Important Concepts:**
+**Important concepts:**
 
-**1. K-Means Clustering**
+**K-Means:** An unsupervised learning algorithm that groups data points into `K` clusters.
 
-K-Means is an unsupervised machine learning algorithm that divides data points into K clusters based on feature similarity.
-
-**2. Euclidean Distance**
-
-Euclidean distance measures the distance between a data point and a cluster centroid.
-
-Formula:
-
-d(x, μ) = √Σ(xᵢ − μᵢ)²
-
-**3. Within-Cluster Sum of Squares (WCSS)**
-
-WCSS measures the sum of squared distances between data points and their assigned cluster centroids.
-
-Formula:
-
-WCSS = Σₖ₌₁ᴷ Σₓ∈Cₖ ||x − μₖ||²
-
-**4. Elbow Method**
-
-The Elbow Method helps identify a suitable number of clusters by examining how WCSS changes as the number of clusters increases.
-
-**Output:**
-
-The experiment generates the following output file:
+**Euclidean distance:** Measures the distance between a data point and a cluster centroid.
 
 ```text
-Mall_Customers_with_Clusters.csv
+d(x, μ) = sqrt(sum((x_i - μ_i)^2))
 ```
 
-The file contains customer records along with their assigned cluster labels.
+**Within-Cluster Sum of Squares (WCSS):** Measures the sum of squared distances between data points and their assigned cluster centroids.
+
+**Elbow Method:** Compares WCSS for different values of `K`; the bend in the curve helps identify a suitable number of clusters.
+
+**Output:** `Mall_Customers_with_Clusters.csv` contains customer records and their assigned cluster labels.
 
 **Applications:**
-
 - Customer segmentation
 - Market analysis
-- Customer behavior analysis
-- Pattern recognition
-- Grouping customers based on purchasing behavior
+- Customer behaviour analysis
+- Identifying groups with similar spending patterns
 
-## 🎯 Learning Outcomes
+**Observation:** K-Means provides cluster labels without requiring predefined target classes.
 
-Through these experiments, the following concepts are practiced:
+### Experiment 10 – Iris Flower Classification Using a Single-Layer Artificial Neural Network (ANN)
 
-- Data preprocessing and cleaning
-- Handling missing values
-- Removing duplicate records
-- Outlier detection
-- Data encoding
+**Dataset:** Iris Dataset (`iris.csv`)
+
+**Program file:** `single_layer_ann_iris.py`
+
+**Objective:** Build a single-layer artificial neural network for a simple binary classification problem using the Iris dataset.
+
+**Classes used:**
+- Setosa → `0`
+- Versicolor → `1`
+
+Virginica is excluded from this experiment, so the model performs binary classification on two Iris species.
+
+**Input features:**
+- Sepal length
+- Sepal width
+- Petal length
+- Petal width
+
+**Model architecture:** Four input features connect to one sigmoid output neuron. The output is converted into class `0` or class `1` using a threshold of `0.5`.
+
+**Tasks performed:**
+- Load the Iris data from a CSV file using Pandas.
+- Select Setosa and Versicolor samples.
+- Encode the species labels as `0` and `1`.
+- Split the dataset into training and testing sets.
+- Standardize the input features.
+- Initialize weights and bias.
+- Implement the sigmoid activation function using NumPy.
+- Train the model using gradient descent over multiple epochs.
+- Predict labels for the test data.
+- Evaluate the model using accuracy, confusion matrix, precision, recall, and F1 score.
+- Predict the class of a new flower sample.
+- Visualize the confusion matrix.
+
+**Core concepts:**
+
+**Weighted sum:**
+
+```text
+z = X · weights + bias
+```
+
+**Sigmoid activation function:**
+
+```text
+sigmoid(z) = 1 / (1 + exp(-z))
+```
+
+The sigmoid function converts the weighted sum into a value between 0 and 1.
+
+**Class prediction:**
+
+```text
+If output >= 0.5, predict Versicolor (1).
+Otherwise, predict Setosa (0).
+```
+
+**Training:** The model calculates prediction errors, computes gradients, and updates the weights and bias using the learning rate.
+
+**Evaluation:** The program prints the actual and predicted classes, accuracy, confusion matrix, and classification report. It also predicts a new sample:
+
+```text
+[5.1, 3.5, 1.4, 0.2]
+```
+
+This sample is expected to be classified as Setosa based on its measurements.
+
+**Implementation note:** NumPy is used to implement the neural-network training logic manually. Scikit-learn is used for train-test splitting, standardization, and evaluation metrics; it is not used to create the ANN model.
+
+**Outcome:** The experiment demonstrates how a basic single-layer neural network learns weights and bias to classify two flower species.
+
+## Installation and Execution
+
+### 1. Requirements
+
+Install Python 3 and the libraries used in the experiments:
+
+```bash
+python3 -m pip install numpy pandas matplotlib seaborn scikit-learn jupyter
+```
+
+### 2. Run Jupyter Notebook
+
+Open a terminal in the repository directory and run:
+
+```bash
+jupyter notebook
+```
+
+Then open the required experiment notebook.
+
+### 3. Run Experiment 10 as a Python script
+
+Make sure `iris.csv` is available at the path used by the script, or update the path in the code. For example:
+
+```python
+df = pd.read_csv("/home/anjali/Downloads/iris.csv")
+```
+
+Run the script using:
+
+```bash
+python3 single_layer_ann_iris.py
+```
+
+The CSV should contain columns named `sepal_length`, `sepal_width`, `petal_length`, `petal_width`, and `species`. If your CSV uses different column names, update the column selections in the code.
+
+## Learning Outcomes
+
+After completing these experiments, the following concepts are practiced:
+
+- Data cleaning and preprocessing
+- Missing-value handling and duplicate removal
+- Outlier detection and categorical encoding
 - Normalization and standardization
-- Exploratory Data Analysis
-- Statistical analysis and visualization
-- Linear Regression
-- Logistic Regression
-- Principal Component Analysis
-- Dimensionality reduction
-- Support Vector Machine
-- Decision Tree
-- K-Nearest Neighbour
-- Random Forest
-- Polynomial Regression
-- Support Vector Regression
-- Classification algorithm comparison
-- Regression algorithm comparison
-- K-Means Clustering
-- Feature scaling
-- Customer segmentation
-- Model evaluation
-- Accuracy, Precision, and Recall
-- F1 Score and ROC-AUC
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
-- R² Score
-- Confusion Matrix
+- Exploratory Data Analysis and visualization
+- Linear Regression and Logistic Regression
+- Regression evaluation using MAE, MSE, RMSE, and R²
+- Principal Component Analysis and dimensionality reduction
+- Support Vector Machine classification
+- Decision Tree and K-Nearest Neighbour classification
+- Comparing classification and regression algorithms
+- K-Means clustering and customer segmentation
+- Artificial neural network fundamentals
+- Sigmoid activation, weights, bias, gradient descent, and binary classification
+- Model evaluation using accuracy, precision, recall, F1 score, ROC-AUC, and confusion matrices
 
-## 👩‍💻 Author
+## Author
 
-**Anjali Palake**
-
+**Anjali Palake**  
 B.Tech – Information Technology  
 Government College of Engineering, Karad
+
+GitHub: [Anjali-Palake75](https://github.com/Anjali-Palake75)  
+Repository: [ML_Practicals](https://github.com/Anjali-Palake75/ML_Practicals)
+
+---
+
+*Note: Metrics listed above are the recorded results from the corresponding practical runs. Results may change if the dataset, preprocessing, train-test split, random seed, or model parameters are changed.*
