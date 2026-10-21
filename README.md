@@ -38,49 +38,50 @@ The purpose of these practicals is to understand and implement fundamental Machi
 
 ## Repository Structure
 
-The folder and file names below describe the intended organization. Keep the actual names in your local repository consistent with your files.
+The repository contains the following 10 experiments, organized in the preferred order.
 
 ```text
 ML_Practicals/
 ├── README.md
-├── Exp1_Data_Pre-processing/
+├── Employee_Data_Preprocessing/
 │   ├── Employee.csv
-│   └── Data pre-processing.ipynb
-├── Exp2_EDA/
+│   └── Data_pre-processing.ipynb
+├── Train_EDA_Using_Python/
 │   ├── train.csv
 │   └── EDA.ipynb
-├── Exp3_Linear&Logistic_Regression/
-│   ├── USA Housing.csv
-│   ├── Diabetes.csv
+├── House_Price_Prediction_Using_Linear_Regression_&_Diabetes_Prediction_Using_Logistic_Regression/
+│   ├── USA_Housing.csv
 │   └── Linear&Logistic_Regression.ipynb
-├── Exp4_PCA/
+├── PCA_Dimensionality_Reduction_Using_Iris_Dataset/
 │   ├── Iris.csv
 │   └── PCA.ipynb
-├── Exp5_SVMForClassification/
+├── Iris_Classification_Using_SVM/
 │   ├── iris.csv
 │   └── SVM_Classification.ipynb
-├── Exp6_Decision_Tree&KNN/
+├── Iris_Classification_Using_Decision_Tree_KNN/
 │   ├── iris.csv
 │   └── Decision_Tree_KNN.ipynb
-├── Exp7_Comparison of Different Regression Algorithms for Predictive Modeling/
+├── House_Price_Prediction_Using_Regression_Algorithms/
 │   └── Comparison_of_Different_Regression_Algorithms_for_Predictive_Modeling.ipynb
-├── Exp8_Compare different classification algorithms/
+├── Iris_Classification_Using_ML_Algorithms/
 │   ├── iris.csv
 │   └── Compare_different_classification_algorithms_using_Precision_Recall,_Accuracy.ipynb
-├── Exp9_K-Means Clustering/
-│   ├── Mall Customers.csv
+├── Customer_Segmentation_Using_KMeans/
+│   ├── Mall_Customers.csv
 │   ├── K-Means_Clustering.ipynb
 │   └── Mall_Customers_with_Clusters.csv
-└── Exp10_Single_Layer_ANN/
+└── Iris_Classification_Using_Single_Layer_ANN/
     ├── iris.csv
-    └── single_layer_ann_iris.py
+    └── single_layer_ann_iris.ipynb
 ```
 
 ## Experiments
 
 ### Experiment 1 – Data Preprocessing
 
-**Dataset:** Employee Dataset
+**Folder:** `Employee_Data_Preprocessing`
+
+**Dataset:** Employee Dataset (`Employee.csv`)
 
 **Objective:** Clean and transform the Employee Dataset so that it is suitable for further analysis and Machine Learning.
 
@@ -99,6 +100,8 @@ ML_Practicals/
 
 ### Experiment 2 – Exploratory Data Analysis (EDA)
 
+**Folder:** `Train_EDA_Using_Python`
+
 **Dataset:** Titanic Dataset (`train.csv`)
 
 **Objective:** Explore the Titanic dataset to understand its variables, distributions, missing values, and relationships.
@@ -116,13 +119,15 @@ ML_Practicals/
 
 **Outcome:** EDA helps identify patterns, data-quality issues, and relationships that may be useful for subsequent analysis or modeling.
 
-### Experiment 3 – Linear and Logistic Regression
+### Experiment 3 – House Price Prediction Using Linear Regression and Diabetes Prediction Using Logistic Regression
+
+**Folder:** `House_Price_Prediction_Using_Linear_Regression_&_Diabetes_Prediction_Using_Logistic_Regression`
 
 This experiment applies two supervised learning algorithms to two different datasets.
 
 #### Part A – Linear Regression
 
-**Dataset:** USA Housing Dataset (`USA Housing.csv`)
+**Dataset:** USA Housing Dataset (`USA_Housing.csv`)
 
 **Objective:** Predict house prices using housing-related features.
 
@@ -190,6 +195,8 @@ This experiment applies two supervised learning algorithms to two different data
 
 ### Experiment 4 – Principal Component Analysis (PCA)
 
+**Folder:** `PCA_Dimensionality_Reduction_Using_Iris_Dataset`
+
 **Dataset:** Iris Dataset (`Iris.csv`)
 
 **Objective:** Reduce the number of input features while retaining as much information from the original dataset as possible.
@@ -241,7 +248,9 @@ The first two components retain approximately **95.80%** of the total variance.
 
 **Observation:** PCA reduces the feature space from four dimensions to two while retaining most of the dataset's variance. Classification accuracy depends on the split and model settings used.
 
-### Experiment 5 – Support Vector Machine (SVM) for Classification
+### Experiment 5 – Iris Classification Using Support Vector Machine (SVM)
+
+**Folder:** `Iris_Classification_Using_SVM`
 
 **Dataset:** Iris Dataset (`iris.csv`)
 
@@ -287,7 +296,9 @@ Predicted species: setosa
 
 **Observation:** The recorded SVM run correctly classified all 30 test samples. Results may vary if the data split or model settings change.
 
-### Experiment 6 – Decision Tree and K-Nearest Neighbour (KNN)
+### Experiment 6 – Iris Classification Using Decision Tree and K-Nearest Neighbour (KNN)
+
+**Folder:** `Iris_Classification_Using_Decision_Tree_KNN`
 
 **Dataset:** Iris Dataset (`iris.csv`)
 
@@ -326,7 +337,9 @@ Predicted species: setosa
 
 **Observation:** Both models achieved 100% accuracy in the recorded run. Performance can vary with the train-test split and hyperparameters.
 
-### Experiment 7 – Comparison of Different Regression Algorithms
+### Experiment 7 – House Price Prediction Using Different Regression Algorithms
+
+**Folder:** `House_Price_Prediction_Using_Regression_Algorithms`
 
 **Dataset:** California Housing Dataset
 
@@ -364,7 +377,9 @@ Predicted species: setosa
 
 **Observation:** In the recorded comparison, Random Forest Regression achieved the lowest MAE and MSE and the highest R² score among the five models.
 
-### Experiment 8 – Comparison of Different Classification Algorithms
+### Experiment 8 – Iris Classification Using Different Machine Learning Algorithms
+
+**Folder:** `Iris_Classification_Using_ML_Algorithms`
 
 **Dataset:** Iris Dataset (`iris.csv`)
 
@@ -405,9 +420,11 @@ Predicted species: setosa
 
 **Observation:** All six algorithms achieved 100% precision, recall, and accuracy in the recorded run. These results depend on the dataset split and model configuration.
 
-### Experiment 9 – K-Means Clustering
+### Experiment 9 – Customer Segmentation Using K-Means Clustering
 
-**Dataset:** Mall Customers Dataset (`Mall Customers.csv`)
+**Folder:** `Customer_Segmentation_Using_KMeans`
+
+**Dataset:** Mall Customers Dataset (`Mall_Customers.csv`)
 
 **Output file:** `Mall_Customers_with_Clusters.csv`
 
@@ -454,11 +471,13 @@ d(x, μ) = sqrt(sum((x_i - μ_i)^2))
 
 **Observation:** K-Means provides cluster labels without requiring predefined target classes.
 
-### Experiment 10 – Iris Flower Classification Using a Single-Layer Artificial Neural Network (ANN)
+### Experiment 10 – Iris Classification Using a Single-Layer Artificial Neural Network (ANN)
+
+**Folder:** `Iris_Classification_Using_Single_Layer_ANN`
 
 **Dataset:** Iris Dataset (`iris.csv`)
 
-**Program file:** `single_layer_ann_iris.py`
+**Notebook:** `single_layer_ann_iris.ipynb`
 
 **Objective:** Build a single-layer artificial neural network for a simple binary classification problem using the Iris dataset.
 
@@ -515,15 +534,9 @@ Otherwise, predict Setosa (0).
 
 **Training:** The model calculates prediction errors, computes gradients, and updates the weights and bias using the learning rate.
 
-**Evaluation:** The program prints the actual and predicted classes, accuracy, confusion matrix, and classification report. It also predicts a new sample:
+**Evaluation:** The notebook evaluates the model using classification metrics and may visualize the confusion matrix, depending on the implemented cells.
 
-```text
-[5.1, 3.5, 1.4, 0.2]
-```
-
-This sample is expected to be classified as Setosa based on its measurements.
-
-**Implementation note:** NumPy is used to implement the neural-network training logic manually. Scikit-learn is used for train-test splitting, standardization, and evaluation metrics; it is not used to create the ANN model.
+**Implementation note:** NumPy can be used to implement the neural-network training logic manually. Scikit-learn may be used for train-test splitting, standardization, and evaluation metrics; the exact implementation should be confirmed from the notebook.
 
 **Outcome:** The experiment demonstrates how a basic single-layer neural network learns weights and bias to classify two flower species.
 
@@ -547,21 +560,13 @@ jupyter notebook
 
 Then open the required experiment notebook.
 
-### 3. Run Experiment 10 as a Python script
+### 3. Run an Experiment
 
-Make sure `iris.csv` is available at the path used by the script, or update the path in the code. For example:
+Open the relevant experiment folder and launch its Jupyter Notebook. Make sure the dataset is available at the path specified in the notebook.
 
-```python
-df = pd.read_csv("/home/anjali/Downloads/iris.csv")
-```
+For example, the Iris dataset should be loaded from the appropriate `iris.csv` file in the experiment folder.
 
-Run the script using:
-
-```bash
-python3 single_layer_ann_iris.py
-```
-
-The CSV should contain columns named `sepal_length`, `sepal_width`, `petal_length`, `petal_width`, and `species`. If your CSV uses different column names, update the column selections in the code.
+If the notebook uses a relative path, run Jupyter from the repository directory or update the path to match your local setup.
 
 ## Learning Outcomes
 
