@@ -4,23 +4,23 @@ This repository contains practical implementations of Machine Learning and Data 
 
 ## Table of Contents
 
-- [About the Repository](#about-the-repository)
-- [Technologies Used](#technologies-used)
-- [Repository Structure](#repository-structure)
-- [Experiments](#experiments)
-  - [Experiment 1: Data Preprocessing](#experiment-1--data-preprocessing)
-  - [Experiment 2: Exploratory Data Analysis (EDA)](#experiment-2--exploratory-data-analysis-eda)
-  - [Experiment 3: Linear and Logistic Regression](#experiment-3--linear-and-logistic-regression)
-  - [Experiment 4: Principal Component Analysis (PCA)](#experiment-4--principal-component-analysis-pca)
-  - [Experiment 5: Support Vector Machine (SVM)](#experiment-5--support-vector-machine-svm-for-classification)
-  - [Experiment 6: Decision Tree and KNN](#experiment-6--decision-tree-and-k-nearest-neighbour-knn)
-  - [Experiment 7: Regression Algorithm Comparison](#experiment-7--comparison-of-different-regression-algorithms)
-  - [Experiment 8: Classification Algorithm Comparison](#experiment-8--comparison-of-different-classification-algorithms)
-  - [Experiment 9: K-Means Clustering](#experiment-9--k-means-clustering)
-  - [Experiment 10: Single-Layer ANN](#experiment-10--iris-flower-classification-using-a-single-layer-artificial-neural-network-ann)
-- [Installation and Execution](#installation-and-execution)
-- [Learning Outcomes](#learning-outcomes)
-- [Author](#author)
+- About the Repository
+- Technologies Used
+- Repository Structure
+- Experiments
+  1. Employee Data Preprocessing
+  2. Exploratory Data Analysis (EDA)
+  3. Linear and Logistic Regression
+  4. Principal Component Analysis (PCA)
+  5. Support Vector Machine (SVM)
+  6. Decision Tree and K-Nearest Neighbour (KNN)
+  7. Regression Algorithm Comparison
+  8. Classification Algorithm Comparison
+  9. K-Means Clustering
+  10. Single-Layer Artificial Neural Network (ANN)
+- Installation and Execution
+- Learning Outcomes
+- Author
 
 ## About the Repository
 
