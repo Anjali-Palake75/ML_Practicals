@@ -1,0 +1,12 @@
+Metric,Value
+Total Images,1563
+Real Images,994
+Fake Images,569
+Corrupted Images,0
+Unique Image Hashes,646
+Duplicate Images,917
+Train-Val Duplicates,448
+Train-Test Duplicates,444
+Val-Test Duplicates,288
+Very Dark Images,0
+Very Bright Images,271

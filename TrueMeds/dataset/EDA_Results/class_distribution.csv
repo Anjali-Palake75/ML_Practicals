@@ -1,0 +1,4 @@
+Split,Fake,Real,Total
+Test,162,287,449
+Train,240,421,661
+Validation,167,286,453

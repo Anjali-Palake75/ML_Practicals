@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+ocr_venv/
+.ipynb_checkpoints/
+temp_uploads/
+.env
