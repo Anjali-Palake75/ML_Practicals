@@ -650,8 +650,8 @@ Third-Year B.Tech Information Technology Student
 
 Government College of Engineering, Karad
 
-GitHub: [Anjali-Palake755](https://github.com/Anjali-Palake755)
+GitHub: [Anjali-Palake755](https://github.com/Anjali-Palake75)
 
-LinkedIn: [Anjali Palake](https://www.linkedin.com/in/anjali-palake-bb509a33)
+
 
 ---
